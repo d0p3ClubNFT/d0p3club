@@ -1,0 +1,87 @@
+@import url(./animate.min.css);
+
+:root{
+    font-size: calc(10px + 0.1vw);
+}
+body{
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.logo:hover{
+    animation: rubberBand 0.6s;
+    -webkit-animation: rubberBand 0.6s;
+}
+.connect-wallet{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color:rgb(53, 66, 57);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wallet-warning{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-left: 4px solid orange;
+    border-right: 4px solid orange;
+    background-color: rgba(62, 60, 60, 0.6);
+    padding: 0.8em;
+}
+.error{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    background-color: rgba(62, 60, 60, 0.6);
+    padding: 0.8em;
+    display: none;
+}
+
+#close-error{
+    color: #fff;
+    cursor: pointer;
+}
+.wallet-warning span{
+    font-weight: bold;
+}
+
+.wallet-logo{
+    width: 60px;
+    height: 40px;
+}
+
+.wallet-button{
+    height: 40px;
+    background-color: rgba(224, 220, 220, 0.7);
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: transform 0.3s linear;
+    -webkit-transition: transform 0.3s linear;
+    -moz-transition: transform 0.3s linear;
+    -ms-transition: transform 0.3s linear;
+    -o-transition: transform 0.3s linear;
+}
+
+.wallet-button:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.wallet-name{
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.displayed-image{
+  height: 350px;
+  width:  350px;
+  animation: zoomInRight 2s,rubberBand 2s 2s;
+  -webkit-animation: zoomInRight 2s,rubberBand 2s 2s;
+}

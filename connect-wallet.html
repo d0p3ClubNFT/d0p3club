@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon.png">
+
+    <link rel="manifest" href="favicons/manifest.json">
+    <!-- Favicon -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Neoh">
+    <meta name="author" content="Frenify">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DØP.CLUB | Connect Wallet</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/connect-wallet.css" />
+</head>
+
+<body class="container px-3">
+    <header class="pt-4 d-flex justify-content-between">
+        <img src="img/logo.png" alt="DOP3 CLUB LOGO" class="logo" />
+        <img src="img/logo.png" alt="DOP3 CLUB LOGO" class="logo" />
+    </header>
+
+    <section>
+
+        <!-- Error -->
+        <div id="error-container" class="error text-danger mt-5">
+            <span id="error"></span>
+            <span id="close-error">&#10006;</span>
+        </div>
+
+        <!-- Warning -->
+        <div class="wallet-warning text-warning mt-5">
+            <span class="text-white fst-italic">MetaMask</span> and <span
+                class="text-white fst-italic">XdcPay</span> do not work well together, please avoid installing both for
+            a smooth user experience!
+        </div>
+
+        <h1 class="connect-wallet mt-5 text-grey">Connect Your Wallet</h1>
+
+
+        <div class=" row my-5 gx-4">
+
+            <div class="col-12 col-sm-7 col-md-7 mb-5">
+                <!-- Connect Wallet Buttons -->
+                <div class="connect-wallet-buttons row gx-5 gy-5">
+
+                    <!-- XDCPAY -->
+                    <div class="col-6 ">
+                        <div id="xdc" class="wallet-button d-flex py-2 align-items-center">
+                            <div class="wallet-logo"><img src="./img/wallet-icons/xdc-icon.png" alt=""
+                                    class="w-100 h-100"></div>
+                            <div class="wallet-name w-100 px-2 py-2 d-flex align-items-center">XDCPay</div>
+                        </div>
+                    </div>
+
+                    <!-- Xumm -->
+                    <div class="col-6 ">
+                        <div id="xumm" class="wallet-button d-flex py-2 align-items-center">
+                            <div class="wallet-logo"><img src="./img/wallet-icons//xumm.png" alt=""
+                                    class="w-100 h-100"></div>
+                            <div class="wallet-name w-100 px-2 py-2 d-flex align-items-center">XUMM</div>
+                        </div>
+                    </div>
+
+                    <!-- Wan Wallet -->
+                    <div class="col-6 ">
+                        <div id="wanwallet" class="wallet-button  d-flex py-2  align-items-center">
+                            <div class="wallet-logo"><img src="./img/wallet-icons/wanwallet.png" alt=""
+                                    class="w-100 h-100"></div>
+                            <div class="wallet-name w-100 px-2 py-2 d-flex align-items-center">WanWallet</div>
+                        </div>
+                    </div>
+
+                    <!-- Wanmask -->
+                    <div class="col-6 ">
+                        <div id="wanmask" class="wallet-button d-flex py-2  align-items-center">
+                            <div class="wallet-logo"><img src="./img/wallet-icons/wanmask.png" alt=""
+                                    class="w-100 h-100"></div>
+                            <div class="wallet-name w-100 px-2 py-2 d-flex align-items-center">WanMask</div>
+                        </div>
+                    </div>
+
+                    <!-- Metamask -->
+                    <div class="col-6 ">
+                        <div id="metamask" class="wallet-button  d-flex py-2  align-items-center">
+                            <div class="wallet-logo"><img src="./img/wallet-icons/metamask.png" alt=""
+                                    class="w-100 h-100"></div>
+                            <div class="wallet-name w-100 px-2 py-2 d-flex align-items-center">MetaMask</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Displayed Images -->
+            <div class="col-12 col-sm-5 col-md-5">
+                <div class="displayed-image mx-auto rounded-circle">
+                    <img src="img/author/3.jpg" alt="" class="w-100 h-100 " style="border-radius: 50%;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <script type="module" src="./js/connectWallet.js"></script>
+</body>
+
+</html>
