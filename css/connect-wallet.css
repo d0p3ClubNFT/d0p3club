@@ -82,6 +82,7 @@ body{
 .displayed-image{
   height: 350px;
   width:  350px;
+  border: 3px solid grey;
   animation: zoomInRight 2s,rubberBand 2s 2s;
   -webkit-animation: zoomInRight 2s,rubberBand 2s 2s;
 }
