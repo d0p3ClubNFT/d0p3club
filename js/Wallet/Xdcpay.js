@@ -1,5 +1,5 @@
 import { WalletAlert } from "./WalletAlert.js";
-import  "../../node_modules/xdc3/dist/web3.min.js";
+
 
 
 
